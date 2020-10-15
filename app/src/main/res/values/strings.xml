@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">StepperExampleOneKotlin</string>
+
+    <string-array name="status">
+        <item>Basic Info</item>
+        <item>Customer Photo</item>
+        <item>Bio-Metric Enrollment</item>
+        <item>Related Document</item>
+        <item>Address Info</item>
+        <item>Emergency Contact</item>
+        <item>Reviewed</item>
+    </string-array>
+</resources>

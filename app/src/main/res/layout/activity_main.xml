@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <params.com.stepview.StatusViewScroller
+        android:layout_margin="10dp"
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:stepCount="7"
+        app:currentCount="4"
+        app:drawLabels="true"
+        android:entries="@array/status"
+        app:circleColorType="fill"
+        app:lineGap="2dp"
+        app:lineWidth="2dp"
+        app:lineColor="@android:color/black"
+        app:lineColorIncomplete="#B4B7BA"
+        app:lineColorCurrent="#91A8D0"
+        app:circleColor="#CC004B8D"
+        app:circleColorCurrent="#004B8D"
+        app:circleColorIncomplete="#BCBCBE"
+        app:textColorLabels="@android:color/white"
+        app:textColorLabelsCurrent="@android:color/white"
+        app:textColorLabelsIncomplete="@android:color/black"
+        app:circleStrokeWidth="3dp"
+        app:circleStrokeColorCurrent="#91A8D0"
+        app:textSizeLabels="15sp"
+        app:completeDrawable="@drawable/ic_baseline_check_24"
+        />
+
+    <LinearLayout
+        android:id="@+id/firstLyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/first_screen"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/secondtLyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/second_screen"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/thirdLyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/third_screen"/>
+    </LinearLayout>
+
+</LinearLayout>
